@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="vendors/bootstrap.css">
+    <link rel="stylesheet" href="css/style.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.1/css/all.min.css">
+</head>
+<body>
+    <div id="mini-chat">
+        <svg id="chat-icon-svg" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 800 800"><path d="M400 26.2c-193.3 0-350 156.7-350 350 0 136.2 77.9 254.3 191.5 312.1 15.4 8.1 31.4 15.1 48.1 20.8l-16.5 63.5c-2 7.8 5.4 14.7 13 12.1l229.8-77.6c14.6-5.3 28.8-11.6 42.4-18.7C672 630.6 750 512.5 750 376.2c0-193.3-156.7-350-350-350zm211.1 510.7c-10.8 26.5-41.9 77.2-121.5 77.2-79.9 0-110.9-51-121.6-77.4-2.8-6.8 5-13.4 13.8-11.8 76.2 13.7 147.7 13 215.3.3 8.9-1.8 16.8 4.8 14 11.7z" fill-rule="evenodd" clip-rule="evenodd"></path></svg>
+    </div>
+    <div id="chat" class="active">
+        <header>
+            <div class="d-flex justify-content-between">
+                <span>Let’s chat? - We're online</span>
+                <div>
+                    <i class="fas fa-bars"></i>
+                    <span class="close-chat"> 
+                        <i class="fas fa-times"></i>
+                    </span>
+                </div>
+            </div>
+            <div class="p-4 text-center">
+                <p>Hi 👋 <br> 
+                     Enter a message below, to start chatting</p>
+            </div>
+        </header>
+        <main>
+            <div class="message support">
+                <p>Salam xoş gəldiz!</p>
+                <p class="time">15:40</p>
+            </div>
+            <div class="message user">
+                <p>Salam xoş gördük!</p>
+                <p class="time">15:40</p>
+            </div>
+        </main>
+        <footer>
+            <input id="chat-text" class="form-control" type="text" placeholder="write here...">
+        </footer>
+    </div>
+
+    <script src="js/app.js"></script>
+</body>
+</html>
