@@ -5,7 +5,7 @@ var chatText=document.getElementById("chat-text")
 var main=document.querySelector("#chat main")
 
 closeChat.onclick=function(e){
-    console.log(e.target)
+    // console.log(e.target)
     chat.classList.add("active")
 }
 miniChat.onclick=function(){
@@ -14,7 +14,7 @@ miniChat.onclick=function(){
 //keypress,keydown,keyup
 chatText.addEventListener("keyup",function(a){
     if(a.keyCode==13){
-        debugger;
+        // debugger;
         if(chatText.value.trim()!=""){
             if(chatText.value[0].toUpperCase() == chatText.value[0]){
                AddChat("support")
@@ -37,3 +37,6 @@ function AddChat(clName){
     `)
     main.scrollTop=main.scrollHeight
 }
+
+
+
